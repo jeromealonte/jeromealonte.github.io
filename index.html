@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jerome Alonte's portfolio website about Frontend and UI/UX development.">
+    <meta name="keywords" content="HTML, CSS and Javascript">
+    <meta name="author" content="Jerome Alonte">
+    <title>My website</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <!-- nav -->
+    <button type="button" onclick="openNav()" class="hamburger-menu">
+        <i class="fa fa-bars"></i>
+    </button>
+    <nav id="mySidenav" class="sidenav">
+        <div class="closebtn" >
+            <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+        </div>
+        <div class="menu">
+            <div>
+                <a href="#home">Home</a>
+            </div>
+            <div>
+                <a href="#about">About</a>
+            </div>
+            <div>
+                <a href="#skills">Skills</a>
+            </div>
+            <div>
+                <a href="#projects">Projects</a>
+            </div>
+            <div>
+                <a href="#contacts">Contacts</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <div id="home"  class="hero-section spacer">
+        <div>
+            <h1>JEROME ALONTE</h1>
+            <h4>Freelance UI/UX Developer</h4>
+            <a class="primary-button" href="#about">Get to know me</a>
+        </div>
+    </div>
+
+    <!-- about me section -->
+    <div id="about" class="about-me-section spacer">
+        <div>
+            <h1>ALL ABOUT ME</h1>
+            <hr class="hr-style">
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quia obcaecati illo ipsam eveniet, fugiat eum hic maiores iste sed nostrum dolore vitae quo, porro totam harum asperiores veritatis aspernatur?</h4>
+        </div>
+    </div>
+
+    <!-- skills section -->
+    <div id="skills"  class="skills-section spacer">
+        <div class="skill-heading">
+            <div class="label">
+                <h1>SKILLS</h1>
+                <hr class="hr-style">
+            </div>
+        </div>
+            
+        <div class="skill-details">
+            <!-- html skill -->
+            <div class="flex-container skills-content">
+                <div class="flex-container align-center justify-center"> 
+                    <i class="fa fa-code"></i>
+                </div>
+                <div class="flex-container align-center">
+                    <div>
+                        <h3>HTML5 and CSS3</h3>
+                        <p>Great for requesting standalone pieces. Currently open!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- javascript skill -->
+            <div class="flex-container skills-content">
+                <div class="flex-container align-center justify-center"> 
+                    <i class="fa fa-laptop-code"></i>
+                </div>
+                <div class="flex-container align-center">
+                    <div>
+                        <h3>Javascript and JQuery</h3>
+                        <p>Great for requesting standalone pieces. Currently open!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ui/ux skill -->
+            <div class="flex-container skills-content">
+                <div class="flex-container align-center justify-center"> 
+                    <i class="fa fa-pencil-alt"></i>
+                </div>
+                <div class="flex-container align-center">
+                    <div>
+                        <h3>UI/UX Development</h3>
+                        <p>Great for requesting standalone pieces. Currently open!</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- projects section -->
+    <div id="projects" class="skills-section spacer projects-section">
+        <div class="skill-heading">
+            <div class="label">
+                <h1>PROJECTS</h1>
+                <hr class="hr-style">
+            </div>
+        </div>
+            
+        <div class="skill-details">
+            <!-- html skill -->
+            <div class="flex-container skills-content">
+                <div class="flex-container align-center justify-center"> 
+                    <i class="fa fa-code"></i>
+                </div>
+                <div class="flex-container align-center">
+                    <div>
+                        <h3>Papa Johns' SQL Automation</h3>
+                        <p>Great for requesting standalone pieces. Currently open!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- javascript skill -->
+            <div class="flex-container skills-content">
+                <div class="flex-container align-center justify-center"> 
+                    <i class="fa fa-laptop-code"></i>
+                </div>
+                <div class="flex-container align-center">
+                    <div>
+                        <h3>TastefulbakesbyKim</h3>
+                        <p>Great for requesting standalone pieces. Currently open!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ui/ux skill -->
+            <div class="flex-container skills-content">
+                <div class="flex-container align-center justify-center"> 
+                    <i class="fa fa-pencil-alt"></i>
+                </div>
+                <div class="flex-container align-center">
+                    <div>
+                        <h3>Carls Jr.</h3>
+                        <p>Great for requesting standalone pieces. Currently open!</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- work with me section -->
+    <div id="contacts" class="work flex-container spacer align-center">
+        <div class="contacts">
+            <div class="label">
+                <h1>WORK WITH ME</h1>
+                <hr class="hr-style">
+                <h3>Github</h3>
+                <p>www.github.com/jeromealonte</p>
+                <h3>Email address</h3>
+                <p>alontejerome@gmail.com</p>
+                <h3>Phone number</h3>
+                <p>(+63)916-520-8719</p>
+                <h3>LinkedIn</h3>
+                <p>www.linkedin.com/in/jeromealonte</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
