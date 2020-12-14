@@ -1,0 +1,55 @@
+@keyframes fadeIn {
+    0%   {
+        transform: translateY(100%); 
+        opacity: 0;
+    }
+    
+    100%   {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    
+  }
+  
+  .fade-in { 
+      animation: fadeIn 1s;
+      position: relative;
+      opacity: 1;
+  }
+
+  /* fade from right */
+  @keyframes fadeRight {
+    0%   {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    
+    100%   {
+       transform: translateX(0%);
+       opacity: 1;
+    }
+    
+  }
+  
+  .fade-right { 
+      animation: fadeRight 1s;
+      position: relative;
+      visibility: visible !important;
+  }
+
+  /* fade from left */
+  @keyframes fadeLeft {
+    0%   {
+        width: 0;
+    }
+    
+    100%   {
+       width: 100%;
+    }
+    
+  }
+  
+  .fade-left { 
+      animation: slideRight 1s;
+      position: relative;
+  }
