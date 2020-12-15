@@ -51,9 +51,10 @@
             position: fixed;
             width: 0;
             height: 100vh;
-            padding: 0;
-            right: 0;
+            padding: 20px;
+            right: -64px;
             transition: 0.4s;
+            display: none;
         }
 
         a.primary-button {
@@ -87,7 +88,7 @@
             font-size: 2.5em;
         }
 
-        .sidenav > div > div {
+        .sidenav > nav > div {
             text-align: left;
             margin-bottom: 20px;
         }
@@ -149,6 +150,10 @@
             display: flex;
             align-items: center;
             background-color: #eee;
+        }
+
+        .about-details {
+            opacity: 0;
         }
 
         .about-me-section div {
@@ -226,6 +231,10 @@
 
         .skills-content p {
             color: var(--secondary-color);
+        }
+
+        .animate-element {
+            opacity: 0;
         }
 
         /* projects section css */

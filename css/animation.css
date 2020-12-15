@@ -40,16 +40,19 @@
   /* fade from left */
   @keyframes fadeLeft {
     0%   {
-        width: 0;
+        transform: translateX(-100%);
+        opacity: 0;
+        
     }
     
     100%   {
-       width: 100%;
+       transform: translateX(0%);
+       opacity: 1;
     }
     
   }
   
   .fade-left { 
-      animation: slideRight 1s;
+      animation: fadeLeft 1s;
       position: relative;
   }
