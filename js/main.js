@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    let sideNav = document.getElementById("mySidenav");
-    let hamburgerMenu = document.querySelector('.hamburger-menu');
+    $('.hamburger-menu');
     let menu = document.querySelector('.menu');
 
     $('.menu a').click(function(){
@@ -16,11 +15,23 @@ $(document).ready(function() {
     })
 
     function openNav() {
-        sideNav.style.padding = "25px";
+        $("#mySidenav").css('padding', '25px');
+
+        let navWidth = 0;
+
+        console.log(window.innerWidth);
+
+        if(window.innerWidth <= 768) {
+            navWidth = '60vw';
+        } else if(window.innerWidth <= 736) {
+            navWidth = '100vw';
+        } else {
+            navWidth = '40vw';
+        }
+
         $( "#mySidenav" ).css('display', 'block').animate({
-            width: '20vw'
+            width: navWidth
           }, 200, function() {
-            
         });
 
     }
@@ -37,19 +48,34 @@ $(document).ready(function() {
     }
 
     $(window).scroll(function(){
-        if(window.pageYOffset > 526 && window.pageYOffset < 1570) {
-            hamburgerMenu.style.color = '#3c95a8';
-        }else {
-            hamburgerMenu.style.color = 'white';
-        }
 
         $(".animate-element").each(function(){
-            var animateElement = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            if (animateElement < topOfWindow + 300) {
+            let animateElement = $(this).offset().top;
+            const topOfWindow = $(window).scrollTop();
+            if (animateElement < topOfWindow + 350) {
                 $(this).addClass("fade-in");
             }
         });
-    })
+
+        // function to change hamburger icon color
+        $("#home").each(function(){
+            updateHamburgerMenuColor($(this), 'white');
+        });
+
+        $(".about-me-section").each(function(){
+            updateHamburgerMenuColor($(this), '#3c95a8');
+        });
+
+        $("#projects").each(function(){
+            updateHamburgerMenuColor($(this), 'white');
+        });
+    });
+
+    function updateHamburgerMenuColor(element, color) {
+        let topOfWindow = $(window).scrollTop();
+        if (element.offset().top < topOfWindow + 50) {
+            $('.hamburger-menu').css('color', color);
+        }
+    }
 });
 
