@@ -1,348 +1,347 @@
 
-        :root {
-            --primary-color: #ffa46b;
-            --secondary-color: #3c95a8;
-            --tertiary-color: white;
-            --spacer-left-right: 100px;
-            --spacer-left-right-mobile: 10px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        html, body {
-            height: 100vh;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        /* shared CSS rule */
-        .flex-container {
-            display: flex;
-        }
-
-        .align-center {
-            align-items: center;
-        }
-
-        .justify-center {
-            justify-content: center;
-        }
-
-        .spacer {
-            padding: 0 var(--spacer-left-right);
-        }
-
-        .hr-style {
-            height: 7px;
-            margin: 10px 0;
-            border-style: none;
-        }
-
-        /* nav section */
-        .sidenav {
-            background-color: #ddd;
-            position: fixed;
-            width: 0;
-            height: 100vh;
-            padding: 20px;
-            right: -64px;
-            transition: 0.4s;
-            display: none;
-        }
-
-        a.primary-button {
-            text-decoration: none;
-            color:  white;
-            background-color: rgba(0, 0, 0, 0);
-            padding: 10px;
-            display: inline-block;
-            margin-top: 12px;
-            border: 1px solid white;
-            transition: all 0.4s ease;
-        }
-
-        a.primary-button:hover {
-            background-color: var(--secondary-color);
-            border: 1px solid var(--secondary-color);
-        }
-
-        .sidenav a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            transition: all 0.4s ease;
-            border-bottom: 2px solid #ddd;
-        }
-
-        .closebtn {
-            position: relative;
-        }
-
-        .closebtn a {
-            font-size: 2.5em;
-        }
-
-        .sidenav > nav > div {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        .sidenav a:hover {
-            border-bottom: 2px solid var(--primary-color);
-        }
-
-        .menu {
-            margin-top: 50px;
-        }
-
-        .hamburger-menu {
-            font-size: 1.5em;
-            color: white;
-            position: fixed;
-            top: 50px;
-            right: 100px;
-            cursor: pointer;
-            background: none;
-            border: none;
-        }
-
-
-
-        /* CSS HERO SECTION */
-        .hero-section {
-            background: url("../images/hero-section.jpg") no-repeat center center fixed;
-            height: 100%;
-            background-size: cover;
-            color: white;
-            display: flex;
-            align-items: center;
-        }
-
-        .hero-section h1 {
-            font-size: 4em;
-        }
-
-        .hero-section > div > div {
-          background-color: var(--primary-color);  
-        }
-
-        .hero-section h4 {
-            /* background-color: var(--primary-color); */
-            padding: 15px;
-            font-size: 1.3em;
-            font-weight: 400;
-        }
-
-        .hero-section div {
-            width: 65%;
-        }
-
-
-        /* about me css  */
-        .about-me-section {
-            height: 80%;
-            display: flex;
-            align-items: center;
-            background-color: #eee;
-        }
-
-        .about-details {
-            opacity: 0;
-        }
-
-        .about-me-section div {
-            background-color: var(--primary-color);
-            padding: 40px;
-            color: white;
-            width: 50%;
-        }
-
-        .about-me-section h4 {
-            font-weight: 400;
-            line-height: 25px;
-        }
-
-        .about-me-section hr {
-            background-color: white;
-            margin-bottom: 30px;
-        }
-
-        /* skills section css */
-        .skills-section {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            background-color: white;
-        }
-
-        .skills-section > div {
-            width: 50%;
-            height: 100%;
-        }
-
-        .skill-heading {
-            display: flex;
-            align-items: center;
-        }
-
-        .skill-heading hr {
-            width: 50%;
-            background-color: var(--secondary-color);
-        }
-
-        .label {
-            display: block;
-            width: 100%;
-        }
-
-        .label h1 {
-            color: var(--primary-color);
-        }
-
-        .skills-content {
-            height: 33.33%;
-        }
-
-        .skills-content > div:nth-child(1) {
-            width: 20%;
-        }
-
-        .skills-content > div:nth-child(2) {
-            width: 80%;
-            padding: 20px;
-        }
-
-        .skills-content i {
-            font-size: 2.5em;
-            color: var(--secondary-color);
-            visibility: hidden;
-        }
-
-        .skills-content h3 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-
-        .skills-content p {
-            color: var(--secondary-color);
-        }
-
-        .animate-element {
-            opacity: 0;
-        }
-
-        /* projects section css */
-        .projects-section {
-            background-color: var(--primary-color);
-        }
-
-        .projects-section h3, .projects-section h1, .projects-section p {
-            color: white;
-        }
-
-        /* work with me section */
-        .work {
-            height: 100%;
-        }
-
-        .work {
-            width: 100%;
-            background: url("../images/contacts-bg.jpg") no-repeat;
-            background-size: cover;
-            justify-content: flex-end;
-        }
-
-        .work .color {
-            border: 1px solid green;
-            width: 20%;
-            background-color: var(--secondary-color);
-        }
-
-        .work hr {
-            background-color: white;
-            margin-bottom: 30px;
-        }
-
-        .contacts .label, .contacts .label h1 {
-            color: white;
-        }
-
-        .contacts {
-            background-color: var(--primary-color);
-            padding: 70px;
-        }
-
-        .contacts .label p {
-            margin-bottom: 15px;
-        }
-
-        /* mobile css rules */
-        @media only screen and (max-width: 768px) {
-            .hero-section div {
-                width: 100%;
-                text-align: center;
-            }
-
-            .about-me-section div {
-                width: 100%;
-            }
-        }
-
-        @media only screen and (max-width: 414px) {
-            .hero-section h1 {
-                font-size: 2.5em;
-            }
-
-            .spacer {
-                padding: 0 0;
-            }
-
-            .about-me-section div {
-                width: 100%;
-            }
-
-            .skills-section {
-                flex-direction: column;
-            }
-
-            .skills-section > div {
-                width: 100%;
-                margin: 20px 0;
-            }
-
-            .skill-heading {
-                height: 20% !important;
-            }
-
-            .skill-heading hr {
-                width: 100%;
-            }
-
-            .label h1 {
-                text-align: center;
-            }
-
-            .work {
-                justify-content: flex-start;
-            }
-
-            .contacts {
-                padding: 20px;
-                width: 100%;
-            }
-
-            .contacts .label p {
-                margin-bottom: 30px;
-            }
-
-            .hamburger-menu {
-                right: 45px;
-            }
-
-        }
+:root {
+    --primary-color: #ffa46b;
+    --secondary-color: #3c95a8;
+    --tertiary-color: white;
+    --spacer-left-right: 100px;
+    --spacer-left-right-mobile: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* shared CSS rule */
+.flex-container {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.spacer {
+    padding: 0 var(--spacer-left-right);
+}
+
+.hr-style {
+    height: 7px;
+    margin: 10px 0;
+    border-style: none;
+}
+
+/* nav section */
+.sidenav {
+    background-color: #ddd;
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    padding: 20px;
+    right: -64px;
+    transition: 0.4s;
+    display: none;
+}
+
+a.primary-button {
+    text-decoration: none;
+    color:  white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    display: inline-block;
+    margin-top: 12px;
+    border: 1px solid white;
+    transition: all 0.4s ease;
+}
+
+a.primary-button:hover {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.sidenav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-bottom: 2px solid #ddd;
+}
+
+.closebtn {
+    position: relative;
+}
+
+.closebtn a {
+    font-size: 2.5em;
+}
+
+.sidenav > nav > div {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.sidenav a:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.menu {
+    margin-top: 50px;
+}
+
+.hamburger-menu {
+    font-size: 1.5em;
+    color: white;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+
+
+/* CSS HERO SECTION */
+.hero-section {
+    background: url("../images/hero-section.jpg") no-repeat center center fixed;
+    height: 100%;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 4em;
+}
+
+.hero-section > div > div {
+    background-color: var(--primary-color);  
+}
+
+.hero-section h4 {
+    padding: 15px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.hero-section div {
+    width: 65%;
+}
+
+
+/* about me css  */
+.about-me-section {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+}
+
+.about-details {
+    opacity: 0;
+}
+
+.about-me-section div {
+    background-color: var(--primary-color);
+    padding: 40px;
+    color: white;
+    width: 50%;
+}
+
+.about-me-section h4 {
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.about-me-section hr {
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+/* skills section css */
+.skills-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.skills-section > div {
+    width: 50%;
+    height: 100%;
+}
+
+.skill-heading {
+    display: flex;
+    align-items: center;
+}
+
+.skill-heading hr {
+    width: 50%;
+    background-color: var(--secondary-color);
+}
+
+.label {
+    display: block;
+    width: 100%;
+}
+
+.label h1 {
+    color: var(--primary-color);
+}
+
+.skills-content {
+    height: 33.33%;
+}
+
+.skills-content > div:nth-child(1) {
+    width: 20%;
+}
+
+.skills-content > div:nth-child(2) {
+    width: 80%;
+    padding: 20px;
+}
+
+.skills-content i {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    visibility: hidden;
+}
+
+.skills-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.skills-content p {
+    color: var(--secondary-color);
+}
+
+.animate-element {
+    opacity: 0;
+}
+
+/* projects section css */
+.projects-section {
+    background-color: var(--primary-color);
+}
+
+.projects-section h3, .projects-section h1, .projects-section p {
+    color: white;
+}
+
+/* work with me section */
+.work {
+    height: 100%;
+}
+
+.work {
+    width: 100%;
+    background: url("../images/contacts-bg.jpg") no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+}
+
+.work .color {
+    border: 1px solid green;
+    width: 20%;
+    background-color: var(--secondary-color);
+}
+
+.work hr {
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.contacts .label, .contacts .label h1 {
+    color: white;
+}
+
+.contacts {
+    background-color: var(--primary-color);
+    padding: 70px;
+}
+
+.contacts .label p {
+    margin-bottom: 15px;
+}
+
+/* mobile css rules */
+@media only screen and (max-width: 768px) {
+    .hero-section div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-me-section div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .spacer {
+        padding: 0 0;
+    }
+
+    .about-me-section div {
+        width: 100%;
+    }
+
+    .skills-section {
+        flex-direction: column;
+    }
+
+    .skills-section > div {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .skill-heading {
+        height: 20% !important;
+    }
+
+    .skill-heading hr {
+        width: 100%;
+    }
+
+    .label h1 {
+        text-align: center;
+    }
+
+    .work {
+        justify-content: flex-start;
+    }
+
+    .contacts {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .contacts .label p {
+        margin-bottom: 30px;
+    }
+
+    .hamburger-menu {
+        right: 45px;
+    }
+
+}
