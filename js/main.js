@@ -14,7 +14,7 @@ $(document).ready(function() {
         closeNav();
     })
 
-    $('#mySidenav a').click(function(event){
+    $('a').click(function(event){
         if(this.hash !== '') {
             event.preventDefault();
             let hash = this.hash;
