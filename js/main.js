@@ -14,6 +14,18 @@ $(document).ready(function() {
         closeNav();
     })
 
+    $('#mySidenav a').click(function(event){
+        if(this.hash !== '') {
+            event.preventDefault();
+            let hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+                window.location.hash = hash;
+            })
+        }
+    })
+
     function openNav() {
         $("#mySidenav").css('padding', '25px');
 
@@ -26,12 +38,12 @@ $(document).ready(function() {
         } else if(window.innerWidth <= 736) {
             navWidth = '100vw';
         } else {
-            navWidth = '40vw';
+            navWidth = '30vw';
         }
 
         $( "#mySidenav" ).css('display', 'block').animate({
             width: navWidth
-          }, 200, function() {
+          }, 300, function() {
         });
 
     }
