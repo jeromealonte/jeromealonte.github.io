@@ -177,6 +177,8 @@ a.primary-button:hover {
     display: flex;
     align-items: center;
     background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .skills-section > div {
@@ -246,6 +248,8 @@ a.primary-button:hover {
 /* projects section css */
 .projects-section {
     background-color: var(--primary-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .projects-section h3, .projects-section h1, .projects-section p {
