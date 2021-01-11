@@ -147,7 +147,8 @@ a.primary-button:hover {
     height: 80%;
     display: flex;
     align-items: center;
-    background-color: #eee;
+    /* background-color: #eee; */
+    background: url('../images/dotted-bg.jpg') repeat 0 0;
 }
 
 .about-details {
